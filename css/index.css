@@ -217,3 +217,42 @@ header a {
   border: 1px solid lightgray;
   padding: 10px;
 }
+.bottom {
+  margin-top: 30px;
+}
+.bottom h2 {
+  font-size: 1.3em;
+  border-bottom: 1px soild #f5f4f4;
+  margin-bottom: 5px;
+}
+.bottom .bracket {
+  display: flex;
+  align-content: center;
+  padding: 5px;
+  align-items: stretch;
+}
+.bottom h6 {
+  display: flex;
+  font-size: 1.1em;
+  justify-content: flex-start;
+  width: 300px;
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
+}
+.bottom p {
+  width: 300px;
+}
+.bottom #gray {
+  background-color: #f5f4f4;
+}
+footer {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: white;
+}

@@ -58,6 +58,7 @@ html, body {
 }
 // my code starts here
 @specific-color:rgb(245, 244, 244);
+@color:gray;
 .container{
 	width:90%;
 	margin-left:20px;
@@ -140,5 +141,44 @@ h3{
 li{
 	border:1px solid lightgray;
 	padding:10px;
+}// closing li
+}// closing main-content
+.bottom{
+	margin-top:30px;
+h2{
+	font-size:1.3em;
+	border-bottom:1px soild @specific-color;
+	margin-bottom:5px
+}//closing h2
+.bracket{
+	display:flex;
+	align-content:center;
+	padding:5px;
+	align-items:stretch;
+}// closing bracket
+h6{
+	display:flex;
+	font-size:1.1em;
+	justify-content:flex-start;
+	width:300px;
+	border-top:1px solid lightgray;
+	padding-top:10px;
+}// closing h6
+p{
+	width:300px;
+}//closing p
+#gray{
+	background-color:@specific-color;
 }
+}
+footer{
+margin-top:30px;
+width:100%;
+text-align:center;
+background-color:@color;
+padding-top:10px;
+padding-bottom:20px;
+margin-right:20px;
+margin-left:20px;
+color:white;
 }
