@@ -59,6 +59,14 @@ html, body {
 // my code starts here
 @specific-color:rgb(245, 244, 244);
 @color:gray;
+@font-stack: Arial, "sans-serif";
+@mobile:(max-width: 500px);
+.center(){
+	flex-direction: column;
+		align-items: center;}
+		.remove(){
+			display:none;
+		}
 .container{
 	width:90%;
 	margin-left:20px;
@@ -70,6 +78,9 @@ nav{
 	width:100%;
 	display:flex;
 	justify-content:flex-end;
+	font-family:@font-stack;
+	@media @mobile {
+		.center()}
 }//closing nav 
 a{
 	justify-content:space-between;
@@ -104,6 +115,8 @@ img{
 	margin-left:20px;
 	width:40%;
 	height:20%;
+	@media @mobile {
+		.remove()}
 }//closing image
 button{
 	width:100px;
@@ -114,11 +127,17 @@ button{
 	margin-top:15px;
 	margin-bottom:40px;
 	margin-left:20px;
+	@media @mobile {
+		width:200px;
+		margin-left:100px;
+	}
 }//closing button
 }//closing top
 .main-content{
 	display:flex;
 	justify-content:space-between;
+	@media @mobile {
+		.center()}
 .box{
 	display:flex;
 	flex-direction:column;
@@ -169,6 +188,19 @@ p{
 }//closing p
 #gray{
 	background-color:@specific-color;
+}
+}
+.contact{
+	margin-right:20px;
+	margin-top:20px;
+h2{
+	font-size:1.2em;
+	border-bottom:1px solid @color;
+	margin-bottom:5px;
+	padding-bottom:10px;
+}
+p{
+	line-height:1.5;
 }
 }
 footer{
